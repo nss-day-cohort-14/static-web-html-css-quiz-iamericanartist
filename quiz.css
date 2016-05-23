@@ -16,31 +16,48 @@ section {
   box-sizing: border-box;
 }
 body {
-  background-color: grey;
+  background: radial-gradient(#999, #333);
   font: 15pt Helvetica, sans-serif;
+
 }
 
 
 #header,
 #welcome {
-  padding: 10px auto 5;
   text-align: center;
+}
+#header {
+  border-bottom: 4px dashed black;
+  background-color: gold;
+  border-radius: 0 0 50px 50px;
+  height: 80px;
+}
+#welcome {
+  margin: 10px;
+  color: gold;
+}
+.title {
+  padding: 15px;
+  font-size: 3rem;
 }
 
 /* MAIN CONTAINER OF ALL CARD ELEMENTS */
-.cardBox{
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 5%;
-}
+.cardBox {
+  max-width: 1200px;
+  margin: 20px auto;
+  /*margin: auto;*/
+  height: 1500px;}
+.cardBox
 
 /* Overall ARTICLE FORMATTING */
 .article {
   background: linear-gradient(to bottom, #555, rgba(200, 200, 200, .5));
   width: 30%;
-  height: 600px;
+  height: 650px;
   border: 1px solid lightblue;
   border-radius: 15px;
+  margin: 1%;
+  float: left;
 }
 
 /* universal article/card headers */
