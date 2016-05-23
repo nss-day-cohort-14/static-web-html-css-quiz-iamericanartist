@@ -1,0 +1,129 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: grey;
+  font: 15pt Helvetica, sans-serif;
+}
+
+
+#header,
+#welcome {
+  padding: 10px auto 5;
+  text-align: center;
+}
+
+/* MAIN CONTAINER OF ALL CARD ELEMENTS */
+.cardBox{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+/* Overall ARTICLE FORMATTING */
+.article {
+  background: linear-gradient(to bottom, #555, rgba(200, 200, 200, .5));
+  width: 30%;
+  height: 600px;
+  border: 1px solid lightblue;
+  border-radius: 15px;
+}
+
+/* universal article/card headers */
+.article>.cardHeader {
+  width: fit;    /* couldn't figure out another way to get width to fit ie auto/100%/etc */
+  padding: 10px 10px 0px;  /* to get cardTitle to touch bottom 0px bottom */
+  background-color: #444;
+  border-radius: 15px 15px 0 0; /* to get matching radii - TL TR BR BL */
+  border-bottom: 3px dashed black;
+}
+
+/* h1 article/card title formatting  */
+.cardTitle {
+  margin: 0px;
+  padding: 10px;
+  background: linear-gradient(0deg, rgba(150, 150, 150, 1), rgba(150, 150, 150, .15));
+  border-radius: 7px 7px 0 0; /* to get complimentary radii - TL TR BR BL */
+  border: 1px dotted lightgray;
+  border-bottom: none;
+  color: white;
+  text-shadow: 0 2px 1px black;
+  text-align: center;
+}
+
+/******* SECTION 1 STYLING / Image & Description *******/
+/* Image related styling */
+.productImage img {
+  width: 100%;
+  padding: 0 9px;
+}
+
+/* productDescription styling */
+.productDescription {
+  font-size: .9rem;
+  padding: 1px 10px 5px;
+  text-align: justify;
+}
+.productAvailable {
+  font-size: .9rem;
+  padding: 2px 4px;
+  background-color: rgba(025,025,025, .6);
+  color: gold;
+}
+
+/******* SECTION 2 STYLING / SPECIFICATIONS *******/
+.section2 ul,
+.section3 ul {
+  list-style: none;
+}
+.dimensions ul,
+.unitPricing ul {
+  margin: 2px 0 4px 15px;
+}
+
+footer.sectionFooter {
+  color: #333;
+  font-size: .7rem;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+/******* SECTION 3 STYLING / PRICING *******/
+section div h4 {
+  padding: 5px 5px 0; 
+}
+
+/******* MORE STYLING / Additional stuff *******/
+/* Section Headers */
+.dimensions,
+.unitPricing {
+  font-size: 1rem;
+  color: #262626;
+  font-weight: bold;
+  margin: 2px;
+}
+
+
+/*
+#article1 {
+  float: left;
+}
+#article2 {
+  float: left;
+}
+
+*/

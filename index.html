@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Grid Quiz / Eric Denton</title>
+  <meta name="A Css Quiz" content="This is a quiz worked for NSS Week 1 content! We worked on HTML and CSS. Good times.">
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <header id="header" class="navArea">
+    <h1 class="title">Card Grids R Us</h1>
+  </header><!-- /header -->	
+  <h3 id="welcome">Welcome!</h3>
+
+  <div class="cardBox"> <!-- cards live in here -->
+
+    <!---------- card 1 ---------->
+    <article id="article1" class="article"> 
+      <div class="cardHeader">
+        <h1 class="cardTitle">Thingy #1</h1>
+      </div>
+
+      <!-- SECTION 1 / TITLE, IMAGE, & DESCRIPTION -->
+      <section class="section1">
+        <div class="productImage">
+          <img src="images/plane.jpg" alt="Product image" class="images">
+        </div>
+        <div class="productDescription">
+          A picture I took of my brother holding a toy plane about 15 years ago. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aut ipsa dignissimos quam dolor velit recusandae ab nesciunt, culpa corporis accusamus, ipsam exercitationem saepe sunt porro at labore alias accusantium.
+        </div>
+        <div class="productAvailable">
+          Available
+        </div>
+      </section>      <!--end "section1" -->
+
+
+      <!--  SECTION 2 PRODUCT SPECIFICATIONS -->
+      <section class="section2">
+        <div class="specs">   <!--"Section2 Header"-->
+          <h4 class="specifications">Specifications</h4>
+        </div>
+        <div class="dimensions">  <!--2 Block elements as UL -->
+          <ul> 
+            <li class="size">
+              Size: 8"x10"
+            </li>
+            <li class="weight">
+              Weight: 1oz.
+            </li>
+          </ul>
+        </div>
+        <footer class="sectionFooter">
+          Specifications good through 10/01/2016
+        </footer>
+      </section>      <!--end "section2" -->
+
+
+      <!-- SECTION 3 PRODUCT PRICING -->
+      <section class="section3">
+        <div class="price">   <!--"Section3 Header"-->
+          <h4 class="pricing">Pricing</h4>
+        </div>
+        <div class="unitPricing">  <!--3 Block elements: as UL -->
+          <ul> 
+            <li class="oneUnit">
+              1: $100.00
+            </li>
+            <li class="moreUnits">
+              2-50: $90.00
+            </li>
+            <li class="lotsMoreUnits">
+              50+: $80.00
+            </li>
+          </ul>
+        </div>
+      </section>      <!--end "section3" -->
+    </article> 
+    <!---------- end "CARD1" ---------->
+
+
+  </div> <!-- cardBox ends / cards live in here -->
+</body>
+</html>
+
+
+<!--  
+Instructions
+
+Your task is to build a grid of cards for a company's products. Here's the requirements for the basic structure of the cards.
+
+1. Each card should be an article.
+2. Each card should take up 30% of the width of the browser window.
+3. Each product should contain a header element that, itself, contains an h1 element where the product's title will be written.
+4. Each product should have three sections.
+
+SECTION 1 Contains three child BLOCK elements
+i.    The first element contains the product image.
+ii.   The second element contains the product description.
+iii.  The third element contains the product availability (e.g. "Available" or "Not Available")
+
+SECTION 2 PRODUCT SPECIFICATIONS
+i.    This section should have a header containing the word "Specifications"
+ii.   This section should contain two block elements
+iii.  The first block element specifies the size.      
+iv.   The second block element specifies the weight.
+v.    This section should contain a footer.
+vi.   The footer contains text stating when the product specifications become invalid.
+
+SECTION 3 PRODUCT PRICING
+i.    This section should contain a header.
+ii.   This section should contain three block elements.
+iii.  Each block element contains information about the price for different quantities.
+
+Additional style requirements
+The entire card has a solid 1px border that is lightblue.
+The card title has a dotted 1px border that is lightgray.
+The title and product image are centered.
+Notice that the text for the description in the image is justified.
+The text for the product specification details and pricing details is bold.
+The availability element extends the full width of the card, with a dark grey background and yellow text. 
+-->
